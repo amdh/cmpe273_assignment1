@@ -1,0 +1,15 @@
+from flask import Flask
+from flask_restful import Resource, Api
+app = Flask(__name__)
+
+class ExpenseManagement(Resource):
+    
+    
+
+   
+    def put(self,id):
+        return { 'status' : 'updated' , 'name' : 'amz'}
+
+    @app.route("/<int:id>")
+    def delete(self,id):
+        return { 'status' : 'deleted'}
